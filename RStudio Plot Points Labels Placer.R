@@ -7,7 +7,6 @@
 #Instructions: Input a location on your computer to put the CSV file
 #(csv_save_location)
 library(manipulate)
-library(sqldf)
 
 ####inputs####
 csv_save_location <- 'C:\\Users\\some_user\\Desktop\\R Code\\my_data.csv'
@@ -85,4 +84,4 @@ labels_placer <- function(start_over) {
   )
 }
 
-labels_placer('N')
+labels_placer(input_start_over)
