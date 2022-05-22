@@ -44,7 +44,7 @@ labels_placer <- function(start_over) {
     my_data$my_deg_final <- my_data$my_deg_default
     
     for (i in c(1:10)) {
-      if(my_data$label[[i]] ==my_state) {
+      if(my_data$label[[i]] ==my_label) {
         
         my_data$my_r_final[[i]] <- my_r_new
         my_data$my_deg_final[[i]] <- my_deg_new
