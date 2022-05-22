@@ -10,7 +10,7 @@ library(manipulate)
 
 ####inputs####
 csv_save_location <- 'C:\\Users\\some_user\\Desktop\\R Code\\my_data.csv'
-input_start_over<- 'Y' #set to 'Y' to use the default CSV file, set to 'N' to use the file
+input_start_over<- 'N' #set to 'Y' to use the default CSV file, set to 'N' to use the file
 #as it was as of the last time the graph was run
 
 ####Data for example#####
@@ -80,7 +80,7 @@ labels_placer <- function(start_over) {
   savePlot = button("Save Label Location"),
   my_deg_new = slider(0,2, step = .25),
   my_r_new = slider(0,1, step = .25),
-  my_state = picker("a", "b", "c", "d", "e", "f", "g", "h", "i", "j")
+  my_label = picker("a", "b", "c", "d", "e", "f", "g", "h", "i", "j")
   )
 }
 
